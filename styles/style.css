@@ -2,7 +2,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    align-items: start;
+    align-items: center;
     padding: 92px 50px 96px;
 }
 
@@ -10,7 +10,8 @@
     display: flex;
     gap: 32px;
     list-style: circle;
-    padding-left: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .header_menu-item:first-child {
@@ -64,8 +65,10 @@
 }
 
 .cover {
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     padding: 165px 50px 0;
     height: 757px;
     background: url("../images/cover.jpg") center / cover no-repeat;
@@ -73,7 +76,6 @@
 }
 
 .cover_title {
-    width: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 100px;
@@ -83,7 +85,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    position: relative;
+    margin: 0;
     z-index: 1;
 }
 
@@ -92,25 +94,23 @@
 }
 
 .cover_title-left {
-    text-align: left;
+    align-self: flex-start;
 }
 
 .cover_title-center {
-    text-align: center;
+    align-self: center;
 }
 
 .cover_title-right {
-    text-align: right;
+    align-self: flex-end;
 }
 
 .description {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     z-index: 1;
-    margin-top: 146px;
+    margin-top: 135px;
 }
 
 .description_text {
@@ -120,7 +120,6 @@
     text-transform: uppercase;
     margin: 0;
     font-weight: 400;
-    max-width: 635px;
     word-spacing: 18px;
 }
 
@@ -137,21 +136,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .lots {
-    margin: 180px 24px 0;
+    margin: 180px auto 0;
+    padding: 0 50px;
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1052px;
 }
 
 .lots_heading {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0 0 74px 40px;
+    margin: 0 0 40px 40px;
 }
 
 .lots_title {
@@ -169,7 +167,7 @@
 .lots_card-link {
     height: 100%;
     text-decoration: none;
-    display: block;
+    display: flex;
     color: inherit;
 }
 
@@ -207,10 +205,10 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 48px 40px;
     color: #fff;
-    justify-content: space-between;
 }
 
 .card_title {
@@ -221,6 +219,7 @@
     line-height: 120%;
     text-underline-offset: 4px;
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .card_text {
@@ -228,18 +227,16 @@
     line-height: 1.2;
     font-weight: 400;
     margin: 0;
+    margin-top: auto;
 }
 
 .about {
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
     margin: 180px auto 0;
     padding: 0 50px;
     display: grid;
-    grid-template-columns: 334px 693px;
+    grid-template-columns: 334px 1fr;
     column-gap: 25px;
-    margin: 120px 24px 0;
 }
 
 .about_logo-column {
@@ -281,7 +278,6 @@
 }
 
 .about_text {
-    width: 693px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -291,12 +287,13 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 103px;
+    width: 693px;
 }
 
 .about_text p {
-    width: 693px;
     font-size: 20px;
     line-height: 24px;
+    width: 693px;
 
 }
 
