@@ -117,11 +117,13 @@
 
 .aligned-text_left {
     align-self: flex-start;
+    margin-left: 30px;
 }
 
 .aligned-text_center {
     align-self: center;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 .aligned-text_right {
@@ -258,7 +260,7 @@
 
 .about {
     max-width: 1100px;
-    margin: 120px 24px 0;
+    margin: 125px 0 0;
     padding: 0 24px;
     display: grid;
     grid-template-columns: 334px 1fr;
@@ -334,7 +336,7 @@
 .footer_address {
     font-size: 18px;
     line-height: 24px;
-    width: 264px;
+    width: 240px;
     font-style: normal;
 }
 
